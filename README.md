@@ -6,7 +6,7 @@
 <h4></h4>
 <h4> :memo: Summary</h4>
 <h4>Batle pokemon app with JS and NodeJS</h4>
-
+<h4>this project was create with course of basic programming of platzi </h4>
 
 <h3>Tools & Technologies</h3>
 <p>
