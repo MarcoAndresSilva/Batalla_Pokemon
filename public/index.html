@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta viewport="width=device-width, initial-scale=1">
+  <title>POKEMON!</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <h1 class="titulo">BATALLA POKÉMON! 🔥💧🌱</h1>
+
+  <section id="seleccionar-pokemon">
+    <h2 class="subtitulo">Elige tu Pokémon:</h2>
+
+    <div id="cards-container" class="cards">
+      <!-- los poke se traen dinamincamente con JS
+        <input type="radio" name="poke" id="squirtle">
+      <label class="poke-card" for="squirtle">
+        <p>Squirtle</p>
+        <img src="./assets/squirtle.png" alt="squirtle">
+      </label>
+    -->
+    </div>
+    <button id="btn-poke">Seleccionar</button>
+  </section>
+
+  <section id="ver-mapa">
+    <h2 class="subtitulo">Recorre el mapa con tu pokemon</h2>
+    <canvas id="mapa"></canvas>
+    <button ontouchend ="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart = "moverArriba" onmousedown="moverArriba()">Arriba</button>
+    <div>
+      <button ontouchend ="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart = "moverIzquerda" onmousedown="moverIzquerda()">Izquerda</button>
+      <button ontouchend ="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart = "moverAbajo" onmousedown="moverAbajo()">Abajo</button>
+      <button ontouchend ="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart = "moverDerecha" onmousedown="moverDerecha()">Derecha</button>
+    </div>
+  </section>
+
+  <section id="seleccionar-ataque">
+    <h2 class="subtitulo">Elige 3 ataques:</h2>
+
+    <div id="contenedor-ataques" class="cards-ataques">
+      <!-- se traen dinamicamente con js
+      <button id="btn-fuego" class="btn-ataques">Fuego 🔥</button>
+      <button id="btn-agua" class="btn-ataques">Agua 💧</button>
+      <button id="btn-tierra" class="btn-ataques">Tierra 🗻</button>
+      <button id="btn-planta" class="btn-ataques">Planta 🌱</button> -->
+    </div>
+
+    <div id="mensajes">
+      <p id="resultado">Mucha Suerte</p>
+
+      <section id="reiniciar">
+        <button id="btn-reiniciar">Reiniciar Juego</button>
+      </section>
+    </div>
+
+    <div class="ataques">
+      <div class="contenedor-ataques-jugador">
+        <p id="vidas-jugador">0</p>
+        <p>Tu pokémon <span id="poke-jugador"></span></p>
+        Ataco con
+        <div id="ataque-jugador"></div>
+      </div>
+
+      <div class="contenedor-ataques-enemigo">
+        <p id="vidas-enemigo">0</p>
+        <p>Pokémon rival <span id="poke-enemigo"></span></p>
+        Ataco con
+        <div id="ataque-enemigo"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="./js/batle_pokemon.js"></script>
+
+</body>
+
+</html>

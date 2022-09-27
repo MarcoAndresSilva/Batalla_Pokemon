@@ -1,0 +1,23 @@
+{
+  "name": "batalla-pokemon",
+  "version": "1.0.0",
+  "description": "game pokemon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoAndresSilva/Batle_Pokemon_App.git"
+  },
+  "author": "Marco Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoAndresSilva/Batle_Pokemon_App/issues"
+  },
+  "homepage": "https://github.com/MarcoAndresSilva/Batle_Pokemon_App#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  }
+}

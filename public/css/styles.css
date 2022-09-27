@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+  font-family: 'Fredoka One', cursive;
+  background-color: #020a33fb;
+}
+
+#seleccionar-pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.titulo {
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.subtitulo {
+  color: white;
+  font-size: 20px;
+}
+
+.cards,
+.cards-ataques {
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px
+}
+
+.poke-card {
+  width: 180px;
+  height: 100px;
+  background: #11468F;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.poke-card img {
+  width: 80px;
+}
+
+#btn-poke {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+}
+
+input:checked label {
+
+  background-color: hotpink;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color:red;
+}
+
+#seleccionar-ataque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-ataques {
+  background-color: #11468F;
+padding: 10px;
+box-sizing: border-box;
+border-radius: 50%;
+border-color: transparent;
+width: 80px;
+color: white;
+font-family: 'Poppins', sans-serif;
+height: 80px;
+
+}
+
+#mensajes {
+  width: 280px;
+  background: #eee;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+
+#btn-reiniciar {
+  border: 1px solid #ccc;
+  background-color: rgb(37, 167, 25);
+  color: #fff;
+  font-family: poppins, sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.ataques {
+  width: 280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+}
+
+.ataques p {
+  text-align: center;
+}
+
+#vidas-jugador,
+#vidas-enemigo {
+  font-size: 32px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#poke-jugador,
+#poke-enemigo {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #ca1a1a;
+}
+
+.contenedor-ataques-jugador,
+.contenedor-ataques-enemigo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ver-mapa{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#ver-mapa button{
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 5px 3px;
+  user-select: none;
+}
+
+.botonera button{
+  padding: 5px;
+  margin: 5px;
+}
+
+
+@media(max-width:560px) {
+
+  .cards,
+  .cards-ataques {
+    flex-direction: column;
+  }
+}
+
+
+@media(max-width:350px) {
+
+  #ver-mapa div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
